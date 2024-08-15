@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Column Layout with Multiple Videos</title>
+  <style>
+    /* Reset default margins and paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent overall scrolling, only middle column scrolls */
+}
+
+.left-column,
+.right-column {
+  width: 200px; /* Fixed width for left and right columns */
+  height: 100vh; /* Full height */
+  position: sticky;
+  top: 0; /* Keeps the columns fixed as you scroll */
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.middle-column {
+  flex: 1; /* Takes up the remaining space */
+  overflow-y: auto; /* Enables vertical scrolling */
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+ 
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h2>Left Column</h2>
+      <p>This column is fixed.</p>
+    </div>
+    <div class="middle-column">
+      <!-- YouTube Videos -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player 1" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="YouTube video player 2" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/V-_O7nl0Ii0" title="YouTube video player 3" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ZZ5LpwO-An4" title="YouTube video player 4" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ltrMfT4Qz5Y" title="YouTube video player 5" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/5NV6Rdv1a3I" title="YouTube video player 6" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" title="YouTube video player 7" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/kXYiU_JCYtU" title="YouTube video player 8" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/04854XqcfCY" title="YouTube video player 9" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" title="YouTube video player 10" allowfullscreen style="width:100%; height:auto;"></iframe>
+      </div>
+    </div>
+    <div class="right-column">
+      <h2>Right Column</h2>
+      <p>This column is fixed.</p>
+    </div>
+  </div>
+</body>
+</html>
